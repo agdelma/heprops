@@ -8,7 +8,7 @@ To install via pip:
 
 ## Usage
 ```python
-    from heprops import helium
+from heprops import helium
 ```
 
 ## Support
