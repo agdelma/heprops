@@ -7,7 +7,9 @@ To install via pip:
     pip install git+git://github.com/agdelma/heprops.git#egg=heprops
 
 ## Usage
+```python
     from heprops import helium
+```
 
 ## Support
 
