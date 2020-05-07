@@ -1,11 +1,14 @@
-# heprops
-A Python package implementing useful properties of the chemical element helium at low temperature
+`heprops` is a simple python package implementing useful properties of the chemical element helium at low temperature
 
-This python package includes experimental data and interpolation for the data found in the incredible and useful paper:
+It includes experimental data and interpolation for the data found in the incredible and useful paper:
 
 - James S. Brooks and Russell J. Donnelly, *The calculated thermodynamic properties of superfluid helium-4*, [J. Phys. Chem. Ref. Data **6** 51 (1977).](https://aip.scitation.org/doi/10.1063/1.555549)
 
+
 Most of the data in this paper was available on the late Russel Donnelly's former website http://pages.uoregon.edu/rjd which has since been taken offline but it is still available via a 2015 snapshot on the [WayBackMachine](https://web.archive.org/web/20150620225058/http://pages.uoregon.edu/rjd/bd.htm).
+
+## Supported Python Versions
+Python >= 3.6 (for f-strings)
 
 ## Installation
 To install via pip:
@@ -36,5 +39,5 @@ print(ξ)
 
 The creation of this software was supported in part by the National Science Foundation under Award Nos. DMR-1808440 and DMR-1809027.
 
-[<img width="100px" src="https://www.nsf.gov/images/logos/NSF_4-Color_bitmap_Logo.png">](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1808440&HistoricalAwards=false)
+[<img width="100px" src="https://www.nsf.gov/images/logos/NSF_4-Color_bitmap_Logo.png">](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1808440)
 
