@@ -13,7 +13,7 @@ Python >= 3.6 (for f-strings)
 ## Installation
 To install via pip:
 
-    pip install git+git://github.com/agdelma/heprops.git#egg=heprops
+    pip install heprops
 
 ## Usage
 At present the package has a single module `helium` which contains a number of functions that return the thermodynamics properties of helium.  For example:
