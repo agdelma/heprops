@@ -3,8 +3,7 @@ A Python package implementing useful properties of the chemical element helium a
 
 This python package includes experimental data and interpolation for the data found in the incredible and useful paper:
 
-
-James S. Brooks and Russell J. Donnelly, *The calculated thermodynamic properties of superfluid helium-4*, [J. Phys. Chem. Ref. Data **6** 51 (1977).](https://aip.scitation.org/doi/10.1063/1.555549)
+- James S. Brooks and Russell J. Donnelly, *The calculated thermodynamic properties of superfluid helium-4*, [J. Phys. Chem. Ref. Data **6** 51 (1977).](https://aip.scitation.org/doi/10.1063/1.555549)
 
 Most of the data in this paper was available on the late Russel Donnelly's former website http://pages.uoregon.edu/rjd which has since been taken offline but it is still available via a 2015 snapshot on the [WayBackMachine](https://web.archive.org/web/20150620225058/http://pages.uoregon.edu/rjd/bd.htm).
 
