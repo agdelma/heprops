@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/heprops.svg)](https://badge.fury.io/py/heprops)
+
 `heprops` is a simple python package implementing useful properties of the chemical element helium at low temperature
 
 It includes experimental data and interpolation for the data found in the incredible and useful paper:
