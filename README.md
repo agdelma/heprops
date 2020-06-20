@@ -64,7 +64,7 @@ print(f'rₘ = {rₘ:6.3f} Å')
 
 A notebook including detailed examples of how to plot and compare the different interaction potentials is included in the `examples` directory at [examples/he_potential_examples.ipynb](./examples/he_potential_examples.ipynb).
 
-<img src="examples/potential_comparison.svg" width="400px">
+<img src="https://raw.githubusercontent.com/agdelma/heprops/master/examples/potential_comparison.svg" width="400px">
 
 
 ## Support
