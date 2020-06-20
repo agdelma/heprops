@@ -25,6 +25,14 @@ To install via pip:
 
     pip install heprops
 
+Or from within a notebook:
+
+```python
+import sys
+!{sys.executable} -m pip install heprops
+```
+
+
 ## Usage
 The package implements two modules: `helium` which contains a number of functions that return the thermodynamics properties of helium and `potential` which implements the pair-potentials.  For example:
 
