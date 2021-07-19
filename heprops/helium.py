@@ -388,3 +388,50 @@ def xi(T):
 
 ξ = lambda T: xi(T)
 # ---------------------------------------------------------------------------------
+helium_dispersion_svp_knots = np.array([0.0894,
+                  0.0894,
+                  0.0894,
+                  0.0894,
+                  0.15,
+                  0.510,
+                  1.60,
+                  2.023,
+                  2.42,
+                  2.665,
+                  3.60,
+                  3.60,
+                  3.60,
+                  3.60
+                 ])
+helium_dispersion_svp_coefficients = np.array([1.53895,
+                         1.932,
+                         4.8,
+                         14.85,
+                         14.88,
+                         5.9384,
+                         16.5014,
+                         17.72455,
+                         18.43656,
+                         18.43545
+                        ])
+_helium_dispersion_svp = BSpline(helium_dispersion_svp_knots, helium_dispersion_svp_coefficients, 3)
+def helium_dispersion_svp(x):
+    """
+        Evaluate helium dispersion at SVP below T_lambda.
+        Data for spline fits from Donnelly 1998.
+        See https://doi.org/10.1063/1.556028 for more details.
+
+        Parameters
+        ----------
+        x : array_like
+            points to evaluate the helium dispersion at in reciprocal angstrom
+
+        Returns
+        -------
+        y : array_like
+            helium dispersion at SVP below T_lambda in kelvin in shape of `x`
+
+
+    """
+    return _helium_dispersion_svp(x)
+# ---------------------------------------------------------------------------------
