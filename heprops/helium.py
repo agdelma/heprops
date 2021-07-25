@@ -414,7 +414,7 @@ helium_dispersion_svp_coefficients = np.array([1.53895,
                          18.43656,
                          18.43545
                         ])
-_helium_dispersion_svp = BSpline(helium_dispersion_svp_knots, helium_dispersion_svp_coefficients, 3)
+_helium_dispersion_svp = scipy.interpolate.BSpline(helium_dispersion_svp_knots, helium_dispersion_svp_coefficients, 3)
 def helium_dispersion_svp(x):
     """
         Evaluate helium dispersion at SVP below T_lambda.

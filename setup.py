@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setuptools.setup(
     name='heprops',
-    version='1.0.0',
+    version='1.1.1',
     packages=setuptools.find_packages(),
     license='MIT',
     description='Properties of the chemical element helium.',
