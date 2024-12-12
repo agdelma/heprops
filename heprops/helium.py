@@ -25,14 +25,17 @@ def convert_P(P,unit1,unit2):
     conv['mbar->Pa'] = 100.0
     conv['Pa->Pa'] = 1.0
     conv['torr->Pa'] = 133.322
-    
+
+    Pcopy = np.copy(P)
+    # This ensures integer arguments also work
+    Pcopy = Pcopy.astype('float64')
     # convert the first unit to pascals
-    P *= conv['%s->Pa'%unit1]
+    Pcopy *= conv['%s->Pa'%unit1]
     
     # convert to the unit of choice
-    P /= conv['%s->Pa'%unit2]
+    Pcopy /= conv['%s->Pa'%unit2]
     
-    return P
+    return Pcopy
 
 # ---------------------------------------------------------------------------------
 def pressure_SVP(T):
