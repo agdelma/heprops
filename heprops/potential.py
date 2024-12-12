@@ -8,9 +8,10 @@ Implement various helium-helium interaction potentials.
 '''
 
 import numpy as np
+import math as math
 
 # compute some factorials
-factorials = [np.math.factorial(i) for i in range(20)]
+factorials = [math.factorial(i) for i in range(20)]
 
 # ------------------------------------------------------------------------
 def lennard_jones(r,ε=10.956,σ=2.6413813):
