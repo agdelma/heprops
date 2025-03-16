@@ -16,7 +16,7 @@ const['ν'] = const['nu']
 
 
 # ---------------------------------------------------------------------------------
-def convert_P(P,unit1,unit2):
+def convert_P(_P,unit1,unit2):
     '''Convert pressures between units.'''
     conv = {}
     conv['atm->Pa'] = 101325.0
@@ -27,7 +27,7 @@ def convert_P(P,unit1,unit2):
     conv['torr->Pa'] = 133.322
     
     # convert the first unit to pascals
-    P *= conv['%s->Pa'%unit1]
+    P = np.copy(_P)*conv['%s->Pa'%unit1]
     
     # convert to the unit of choice
     P /= conv['%s->Pa'%unit2]

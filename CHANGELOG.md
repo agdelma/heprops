@@ -2,6 +2,11 @@
 
 All notable changes to the `heprops` project are documented in this file.
 
+## 1.2.1 (2025-03-16)
+### Bugfix
+- changed `np.math` to `math`
+- fixed possibility to overwrite pressure array in `convert_P`
+
 ## 1.1.1 (2021-07-26)
 ### Bugfix
 - fixed issue where BSpline was not being imported correctly
