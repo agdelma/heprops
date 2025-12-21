@@ -1,5 +1,7 @@
 [![PyPI version](https://badge.fury.io/py/heprops.svg)](https://badge.fury.io/py/heprops) 
 [![DOI](https://zenodo.org/badge/261878594.svg)](https://zenodo.org/badge/latestdoi/261878594)
+[![Static Badge](https://img.shields.io/badge/docs-heprops)](https://agdelma.github.io/heprops/)
+
 
 
 
