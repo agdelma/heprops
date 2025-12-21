@@ -1,0 +1,62 @@
+site_name: heprops
+site_description: "Thermodynamic properties of helium at low temperature + He–He pair potentials."
+site_url: "https://agdelma.github.io/heprops/"
+repo_url: "https://github.com/agdelma/heprops"
+repo_name: "agdelma/heprops"
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - API Reference:
+      - api/index.md
+      - heprops.helium: api/helium.md
+      - heprops.potential: api/potential.md
+  - Examples:
+      - examples/index.md
+      - Thermodynamic queries: examples/thermodynamics.md
+      - Pair potentials: examples/pair-potentials.md
+  - Changelog: changelog.md
+  - License: license.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            show_signature_annotations: true
+            members_order: source
+            docstring_section_style: list
