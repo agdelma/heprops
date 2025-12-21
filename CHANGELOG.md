@@ -4,7 +4,7 @@ All notable changes to the `heprops` project are documented in this file.
 
 ## 1.3.0 (2025-12-21)
 ### Features
-- Added documentation site
+- Added documentation site at https://agdelma.github.io/heprops/
 - Updated `potential.py` to have improved stability and readability
 
 ## 1.2.1 (2025-03-16)
