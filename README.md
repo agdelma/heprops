@@ -36,7 +36,9 @@ import sys
 
 
 ## Usage
-The package implements two modules: `helium` which contains a number of functions that return the thermodynamics properties of helium and `potential` which implements the pair-potentials.  For example:
+The package implements two modules: `helium` which contains a number of functions that return the thermodynamics properties of helium and `potential` which implements the pair-potentials.  For full documentation visit [![docs](https://img.shields.io/badge/docs-stable-blue)](https://agdelma.github.io/heprops/)
+
+At an glance:
 
 ```python
 from heprops import helium,potential
