@@ -75,5 +75,5 @@ A notebook including detailed examples of how to plot and compare the different 
 
 The creation of this software was supported in part by the National Science Foundation under Award Nos. DMR-1808440 and DMR-1809027.
 
-[<img width="100px" src="https://www.nsf.gov/images/logos/NSF_4-Color_bitmap_Logo.png">](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1808440)
+[<img width="100px" src="https://nsf.widen.net/s/xqpbx8mgpf/nsf_official_logo_med_res_600ppi">](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1808440)
 
