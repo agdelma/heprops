@@ -1,9 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/heprops.svg)](https://badge.fury.io/py/heprops) 
 [![DOI](https://zenodo.org/badge/261878594.svg)](https://zenodo.org/badge/latestdoi/261878594)
-[![Static Badge](https://img.shields.io/badge/docs-heprops)](https://agdelma.github.io/heprops/)
-
-
-
+[![docs](https://img.shields.io/badge/docs-stable-blue)](https://agdelma.github.io/heprops/)
 
 `heprops` is a simple python package implementing useful properties of the chemical element helium at low temperature
 
