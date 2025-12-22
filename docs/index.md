@@ -16,7 +16,7 @@ The library also implements a number of historical and modern intramolecular int
 - M. Przybytek, W. Cencek, J. Komasa, G. Łach, B. Jeziorski, and K. Szalewicz, *Relativistic and Quantum Electrodynamics Effects in the Helium Pair Potential*, [Phys. Rev. Lett. 104, 183003 (2010).](https://doi.org/10.1103/PhysRevLett.104.183003)
 - W. Cencek, M. Przybytek, J. Komasa, J. B. Mehl, B. Jeziorski, and K. Szalewicz, *Effects of adiabatic, relativistic, and quantum electrodynamics interactions on the pair potential and thermophysical properties of helium*, [J. Chem. Phys. 136, 224303 (2012).](https://doi.org/10.1063/1.4712218)
 
-Source code: `agdelma/heprops` on GitHub.
+Source code: `agdelma/heprops` on [GitHub](https://github.com/agdelma/heprops).
 
 ## Citation
 [![DOI](https://zenodo.org/badge/261878594.svg)](https://zenodo.org/badge/latestdoi/261878594)
@@ -38,22 +38,33 @@ Source code: `agdelma/heprops` on GitHub.
 ```python
 from heprops import helium, potential
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Temperature grid (Kelvin)
-T = np.linspace(0.5, 2.5, 5)
+T = np.linspace(0.05, 2.5, 500)
 
 # Superfluid fraction along SVP
 rho_s_over_rho = helium.superfluid_fraction_SVP(T)
 
-# Coherence length (Å). Note: the function name is the Greek letter xi.
+# Coherence length (in m). Note: the function name is the Greek letter xi.
 xi = helium.ξ(T)
 
-# One of the implemented He–He pair potentials
-V = potential.szalewicz_2012
-r = np.linspace(2.5, 5.0, 1000)  # Å
-r_min = r[np.argmin(V(r))]
+# Plot both on the same axis
+fig,ax = plt.subplots()
 
-print(rho_s_over_rho)
-print(xi)
-print(r_min)
+# Vertical line at the lambda point
+ax.axvline(x=helium.const['Tλ'], color='grey', linestyle='--', linewidth=1)
+ax.plot(T, rho_s_over_rho, label=r'$\rho_s / \rho$', color=colors[0])
+ax.set_xlabel(r'Temperature (K)')
+ax.set_ylabel(r'Superfluid Fraction $\rho_s / \rho$',color=colors[0])
+ax.set_xlim(0.05,2.45)
+ax.set_ylim(0.00,1.1)
+
+# Plot coherence length on the same axis
+ax2 = ax.twinx()
+ax2.plot(T, xi*1E10, color=colors[1], label=r'$\xi$')
+ax2.set_ylabel("Coherence Length ξ (Å)", color=colors[1])
+ax2.set_yscale('log')
 ```
+
+![superfluid fraction and coherence length](assets/he4_superfluid_fraction_and_coherence_length.svg)

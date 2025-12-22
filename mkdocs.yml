@@ -6,6 +6,8 @@ repo_name: "agdelma/heprops"
 
 theme:
   name: material
+  logo: assets/heprops_logo_w.png
+  favicon: assets/heprops_favicon.png
   features:
     - navigation.instant
     - navigation.tracking
@@ -15,6 +17,24 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
+
+  palette:
+    # Light mode
+    - scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
 
 nav:
   - Home: index.md
