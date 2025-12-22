@@ -34,5 +34,3 @@ xi = helium.ξ(T)
 # Or, avoid typing the symbol
 xi = getattr(helium, "ξ")(T)
 ```
-
-If you add ASCII aliases in the code (e.g. `xi = ξ`), mkdocstrings will document both.
